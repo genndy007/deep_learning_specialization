@@ -2,3 +2,4 @@ numpy
 jupyter
 matplotlib
 scikit-learn
+h5py
