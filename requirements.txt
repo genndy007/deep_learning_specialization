@@ -3,3 +3,4 @@ jupyter
 matplotlib
 scikit-learn
 h5py
+dlai-tools==0.4.0
