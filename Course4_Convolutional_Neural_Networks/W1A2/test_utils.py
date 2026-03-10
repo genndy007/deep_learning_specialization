@@ -9,6 +9,7 @@ from tensorflow.keras.layers import Conv2DTranspose
 from tensorflow.keras.layers import concatenate
 from tensorflow.keras.layers import ZeroPadding2D
 from tensorflow.keras.layers import Dense
+from keras import Sequential
 
 
 # Compare the two inputs
@@ -27,7 +28,7 @@ def comparator(learner, instructor):
         print(colored("Test failed. Your output is not as expected output.", "red"))
 
 # extracts the description of a given model
-def summary(model):
+def summary(model: Sequential):
     model.compile(optimizer='adam',
                   loss='categorical_crossentropy',
                   metrics=['accuracy'])
